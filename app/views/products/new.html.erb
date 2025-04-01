@@ -1,0 +1,11 @@
+
+<%= simple_form_for(@product) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :price %>
+  <%= f.input :description %>
+  <%= f.input :category %>
+  <%= f.input :picture, as: :file %>
+  <%= f.submit %>
+<% end %>
+
+<%console %>
