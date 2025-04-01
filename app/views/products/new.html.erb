@@ -1,11 +1,32 @@
+<div class="container mt-5 p-4 bg-white shadow-4 rounded-4">
+  <%= simple_form_for(@product) do |f| %>
+    <div class="mb-3">
 
-<%= simple_form_for(@product) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :price %>
-  <%= f.input :description %>
-  <%= f.input :category %>
-  <%= f.input :picture, as: :file %>
-  <%= f.submit %>
-<% end %>
+      <strong class="fs-5"><%= f.input :name, input_html: { class: 'form-control form-control-lg rounded-pill' } %></strong>
+    </div>
 
-<%console %>
+    <div class="mb-3">
+
+     <strong class="fs-5"> <%= f.input :price, input_html: { class: 'form-control form-control-lg rounded-pill' } %></strong>
+    </div>
+
+    <div class="mb-3">
+     <strong class="fs-5"> <%= f.input :description, input_html: { class: 'form-control form-control-lg rounded-pill' } %></strong>
+    </div>
+
+    <div class="mb-3">
+     <strong class="fs-5"> <%= f.input :category, input_html: { class: 'form-control form-control-lg rounded-pill' } %></strong>
+    </div>
+
+    <div class="mb-3">
+      <strong class="fs-5"><%= f.input :picture, as: :file, input_html: { class: 'form-control form-control-lg rounded-pill' } %></strong>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <%= f.submit class: 'btn btn-success w-50 rounded-pill py-2 fs-5' %>
+      <%= link_to '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+      </svg> Back to lists'.html_safe, products_path, class: 'btn btn-light w-45 rounded-pill py-2 fs-5' %>
+    </div>
+  <% end %>
+</div>

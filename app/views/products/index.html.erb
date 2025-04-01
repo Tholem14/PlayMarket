@@ -3,6 +3,11 @@
     <h2 class="text-center">Total Price</h2>
     <h3 id="total-price" class="text-center text-primary">$0</h3>
     <ul class="list-group mt-3 entries"></ul>
+    <div class='d-flex justify-content-end'>
+<%= link_to '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+      </svg> Add new product'.html_safe, new_product_path, class:'btn btn-success' %>
+      </div>
   </div>
 </section>
 
@@ -10,7 +15,7 @@
    <div class="row">
 <% @products.each do |product|%>
     <div class="col-md-3 mb-4" id="shop-items">
-      <div class="card shadow rounded-4 h-100 d-flex flex-column bg-dark">
+      <div class="card shadow rounded-4 h-100 d-flex flex-column">
         <img src="<%=product.picture%>" class="card-img-top rounded-top" class="card-img-top" alt="<%=product.name%>">
         <div class="card-body text-center flex-grow-1">
          <div class="mb-4">
