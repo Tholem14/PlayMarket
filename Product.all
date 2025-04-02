@@ -1,0 +1,272 @@
+=> 
+[[32m#<Product:0x00007f8ea0fc0478[0m
+  id: [34m[1m2018[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Spruce DDPAT[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. The outer wrap is fabric screen printed with grey digital camo.\\n\\n<i>Some people say they're tough... others show it</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m475[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_camo_grey_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.549785000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.549785000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124fdd8[0m
+  id: [34m[1m2019[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Desert Shamagh[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m60[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_fabric_houndstooth_orange_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.555216000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.555216000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124fb58[0m
+  id: [34m[1m2020[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Badlands[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. This DIY hand protection is made of scavenged materials.\\n\\n<i>Felix turns a blind eye towards the Colation Taskforce's unsanctioned boxing league</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m256[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_fabric_orange_camo_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.604178000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.604178000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124fa18[0m
+  id: [34m[1m2021[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | CAUTION![0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m273[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_caution_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.630343000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.630343000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f798[0m
+  id: [34m[1m2022[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Duct Tape[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. These scavenged hand-wraps are surprisingly durable but not especially breathable.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m395[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_ducttape_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.634614000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.634614000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f658[0m
+  id: [34m[1m2023[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Cobalt Skulls[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. These blue bias-tape handwraps are printed with skull motifs.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m380[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_fabric_blue_skulls_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.639580000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.639580000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f518[0m
+  id: [34m[1m2024[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Overprint[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. These black bias-tape handwraps have been printed with rubberized geometric patterns.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m357[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_fabric_geometric_blue_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.643931000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.643931000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f3d8[0m
+  id: [34m[1m2025[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Giraffe[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m206[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_fabric_giraffe_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.648384000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.648384000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f298[0m
+  id: [34m[1m2026[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Arboreal[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. These bias-tape handwraps have been dyed with a forest camo pattern.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m488[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_fabric_green_camo_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.652336000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.652336000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f158[0m
+  id: [34m[1m2027[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Leather[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. They are made of leather, gauze, and wicked intent.\\n\\n<i>Become notorious</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m118[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.656311000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.656311000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124f018[0m
+  id: [34m[1m2028[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Constrictor[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m487[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_leathery_snakeskin_orange_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.660362000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.660362000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124eed8[0m
+  id: [34m[1m2029[0m,
+  name: [31m[1m"[0m[31m★ Hand Wraps | Slaughter[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mPreferred by hand-to-hand fighters, these wraps protect the knuckles and stabilize the wrist when punching. Dyed crimson, these wraps make it hard to see where the fabric ends and the bloodstains begin\\n\\n<i>Who doesn't love working with their hands?</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m61[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/leather_handwraps_handwrap_red_slaughter_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.664512000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.664512000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124ed98[0m
+  id: [34m[1m2030[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Eclipse[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph. This is the original classic black design that made Tortue a household name.\\n\\n<i>Don't call it a midlife crisis</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m185[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_basic_black_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.668708000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.668708000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124ec58[0m
+  id: [34m[1m2031[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Turtle[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph. This green and grey pair has bright orange accents.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m378[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_basic_green_orange_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.672240000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.672240000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124eb18[0m
+  id: [34m[1m2032[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Blood Pressure[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m64[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_carbonfiber_red_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.676261000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.676261000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e898[0m
+  id: [34m[1m2033[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Finish Line[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m71[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_checker_flag_blue_green_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.679827000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.679827000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e758[0m
+  id: [34m[1m2034[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | POW![0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph. This pair has been covered in brightly colored comic book onomatopoeia.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m119[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_choco_boom_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.683888000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.683888000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e618[0m
+  id: [34m[1m2035[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | 3rd Commando Company[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph.[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m67[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_commando_ksk_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.688261000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.688261000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e4d8[0m
+  id: [34m[1m2036[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Spearmint[0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph. White leather and red stitching make these gloves as stylish as they are comfortable.\\n\\n<i>For what he's charging us, you'd think Huxley could at least throw in a tin of mints... - Felix Riley, Commanding Officer</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m385[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_mint_triangle_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.692499000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.692499000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e398[0m
+  id: [34m[1m2037[0m,
+  name: [31m[1m"[0m[31m★ Moto Gloves | Boom![0m[31m[1m"[0m,
+  description:
+   [31m[1m"[0m[31mThese bulky hard knuckled gloves can protect the wearers hands from road rash at 60 mph. This pair has been covered in comic book onomatopoeia.\\n\\n<i>POW! BOOM! BIFF!</i>[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31mGloves[0m[31m[1m"[0m,
+  price: [34m[1m435[0m,
+  picture:
+   [31m[1m"[0m[31mhttps://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/default_generated/motorcycle_gloves_motorcycle_mono_boom_light_png.png[0m[31m[1m"[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 21:00:22.696176000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 21:00:22.696176000 UTC +00:00[32m>[0m,
+ [32m#<Product:0x00007f8ea124e258[0m
+  id: [34m[1m2038[0m,
+  name: [31m[1m"[0m[31m[1m"[0m,
+  description: [31m[1m"[0m[31m[1m"[0m,
+  category: [31m[1m"[0m[31m[1m"[0m,
+  price: [36m[1mnil[0m,
+  picture: [36m[1mnil[0m,
+  user_id: [34m[1m4[0m,
+  status: [36m[1mnil[0m,
+  created_at: Tue, 01 Apr 2025 22:49:11.177394000 UTC +00:00,
+  updated_at: Tue, 01 Apr 2025 22:49:11.177394000 UTC +00:00[32m>[0m]

@@ -27,7 +27,7 @@ url = 'https://bymykel.github.io/CSGO-API/api/en/skins.json'
 html_doc = URI.open(url).read
 products = JSON.parse(html_doc)
 
-products.first(20).each do |product|
+products.last(20).each do |product|
   Product.create!(
     name: product["name"],
     description: product["description"],
