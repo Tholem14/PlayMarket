@@ -1,0 +1,10 @@
+// Actualiza el contador del carrito en el navbar
+document.getElementById('cart-count').textContent = '<%= @cart.line_items.sum(:quantity) %>';
+
+// Muestra un mensaje flash
+document.getElementById('flash-messages').innerHTML =
+  '<div class="alert alert-success"><%= flash.now[:notice] %></div>';
+
+// Opcional: Renderiza el carrito completo si hay un partial
+document.getElementById('cart-items').innerHTML =
+  '<%= j render partial: "carts/cart", locals: { cart: @cart } %>';

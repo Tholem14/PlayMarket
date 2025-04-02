@@ -1,0 +1,17 @@
+<tr>
+  <td><%= line_item.product.name %></td>
+  <td><%= number_to_currency(line_item.product.price) %></td>
+  <td>
+    <%= form_with model: line_item, url: line_item_path(line_item), method: :patch do |f| %>
+      <%= f.number_field :quantity, min: 1, class: 'form-control' %>
+      <%= f.submit 'Actualizar', class: 'btn btn-sm btn-warning' %>
+    <% end %>
+  </td>
+  <td><%= number_to_currency(line_item.total_price) %></td>
+  <td>
+    <%= button_to 'Eliminar', line_item_path(line_item),
+          method: :delete,
+          class: 'btn btn-sm btn-danger',
+          data: { confirm: '¿Quitar del carrito?' } %>
+  </td>
+</tr>
