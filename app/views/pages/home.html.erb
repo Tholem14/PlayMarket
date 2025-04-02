@@ -1,2 +1,148 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- app/views/pages/home.html.erb -->
+
+<!-- Hero Section -->
+<div class="hero bg-dark text-white text-center py-5" style="background-image: url('/assets/counter_strike.jpg'); background-size: cover; background-position: right;">
+  <div class="container">
+    <h1 class="display-4">Compra y vende skins de Counter Strike</h1>
+    <%= link_to "Explorar Marketplace", products_path, class: "btn btn-primary btn-lg" %>
+  </div>
+</div>
+
+<!-- Barra de búsqueda -->
+<div class="container my-4">
+  <div class="input-group">
+    <%= form_with url: products_path, method: :get, local: true, class: "w-100" do |form| %>
+      <div class="input-group">
+        <%= form.text_field :query, placeholder: "Buscar skins o cuentas...", class: "form-control", id: "search-bar" %>
+        <%= form.submit "Buscar", class: "btn btn-secondary" %>
+      </div>
+    <% end %>
+  </div>
+  <ul id="suggestions" class="list-group mt-2"></ul>
+</div>
+
+<!-- Nuevo Banner -->
+<div class="container my-4 text-center">
+  <div class="d-flex justify-content-center align-items-center bg-dark text-white py-4" style="border-radius: 10px;">
+    <div class="row w-100">
+      <div class="col-md-3 text-center">
+        <img src="/assets/star-icon.png" alt="Reseñas" class="img-fluid mb-2">
+        <p>19 576 RESEÑAS EXCELENTES</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="/assets/flame-icon.png" alt="Cuotas" class="img-fluid mb-2">
+        <p>COMISIONES DEL 2%</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="/assets/discount-icon.png" alt="Descuento" class="img-fluid mb-2">
+        <p>HASTA 50% DE DESCUENTO EN LOS PRECIOS DE STEAM</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <img src="/assets/clients-icon.png" alt="Clientes" class="img-fluid mb-2">
+        <p>4.6M+ CLIENTES SATISFECHOS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Productos Destacados -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Productos Destacados</h2>
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <%= link_to product_path(product), class: "text-decoration-none text-dark" do %>
+            <!-- Espacio para la imagen del producto -->
+            <div class="card-img-top bg-light" style="height: 200px;"></div>
+            <div class="card-body text-center">
+              <h5 class="card-title"><%= product.name %></h5>
+              <p class="card-text"><%= number_to_currency(product.price, unit: "$") %></p>
+              <p class="text-danger" id="countdown-<%= product.id %>">00:00:00</p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<!-- Métodos de Pago -->
+<div class="container my-5 text-white bg-dark py-4">
+  <h2 class="text-center mb-4">Elige entre más de 40 métodos de pago seguros</h2>
+  <div class="row text-center">
+    <div class="col-md-3 payment-method">
+      <img src="/assets/visa_logo" alt="Visa" class="img-fluid mb-2 payment-logo">
+      <p>$500 / Trans</p>
+      <p>0.25% TARIFA + 0.35$</p>
+    </div>
+    <div class="col-md-3 payment-method">
+      <img src="/assets/paypal_logo" alt="Payoneer" class="img-fluid mb-2 payment-logo">
+      <p>$1000 / Trans</p>
+      <p>0% TARIFA</p>
+    </div>
+    <div class="col-md-3 payment-method">
+      <img src="/assets/bitcoin_logo" alt="Bitcoin" class="img-fluid mb-2 payment-logo">
+      <p>$3500 / Trans</p>
+      <p>1.5% TARIFA</p>
+    </div>
+    <div class="col-md-3 payment-method">
+      <img src="/assets/tether_logo" alt="Tether" class="img-fluid mb-2 payment-logo">
+      <p>$3500 / Trans</p>
+      <p>2% TARIFA</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .payment-logo {
+    height: 50px;
+    max-width: 100px;
+    object-fit: contain;
+  }
+
+  .payment-method:nth-child(2) .payment-logo {
+    height: 60px; /* Ajuste específico para PayPal */
+  }
+</style>
+
+<!-- Explorar más -->
+<div class="text-center my-4">
+  <%= link_to "Ver todos los productos", products_path, class: "btn btn-outline-primary btn-lg" %>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function startCountdown(elementId, duration) {
+      const countdownElement = document.getElementById(elementId);
+      if (!countdownElement) return;
+
+      let targetTime = new Date().getTime() + duration;
+
+      function updateCountdown() {
+        let now = new Date().getTime();
+        let timeLeft = targetTime - now;
+
+        if (timeLeft <= 0) {
+          countdownElement.innerHTML = "00:00:00";
+          return;
+        }
+
+        let hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+        let minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+        let seconds = Math.floor((timeLeft / 1000) % 60);
+
+        countdownElement.innerHTML = `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    }
+
+    document.querySelectorAll("[id^='countdown-']").forEach((element) => {
+      let randomDuration = Math.floor(Math.random() * (2 * 60 * 60 * 1000 - 10 * 60 * 1000)) + 10 * 60 * 1000;
+      startCountdown(element.id, randomDuration);
+    });
+  });
+</script>
