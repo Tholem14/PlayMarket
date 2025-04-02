@@ -1,10 +1,15 @@
 <!-- app/views/pages/home.html.erb -->
 
 <!-- Hero Section -->
-<div class="hero bg-dark text-white text-center py-5" style="background-image: url('/assets/counter_strike.jpg'); background-size: cover; background-position: right;">
-  <div class="container">
-    <h1 class="display-4">Compra y vende skins de Counter Strike</h1>
-    <%= link_to "Explorar Marketplace", products_path, class: "btn btn-success btn-lg" %>
+<div class="hero text-white text-center d-flex align-items-center justify-content-center" style="position: relative; height: 35vh; background-image: url('/assets/counter_strike.jpg'); background-size: cover; background-position: center;">
+
+  <!-- Overlay oscuro -->
+  <div class="overlay"></div>
+
+  <!-- Contenido -->
+  <div class="container hero-content">
+    <h1 class="display-5 fw-bold">Compra y vende skins de Counter Strike</h1>
+    <%= link_to "Explorar Marketplace", products_path, class: "btn btn-success btn-lg hero-btn" %>
   </div>
 </div>
 
@@ -45,7 +50,7 @@
   <div class="row justify-content-center">
 
     <div class="col-md-3">
-      <div class="card text-center bg-dark border-success shadow-lg py-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3 payment-card">
         <img src="/assets/visa_logo.png" alt="Visa" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
         <p class="fw-bold text-success">$500 / Trans</p>
         <p class="fw-bold text-success">0.25% TARIFA + 0.35$</p>
@@ -53,7 +58,7 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card text-center bg-dark border-success shadow-lg py-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3 payment-card">
         <img src="/assets/paypal_logo.png" alt="PayPal" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
         <p class="fw-bold text-success">$1000 / Trans</p>
         <p class="fw-bold text-success">0% TARIFA</p>
@@ -61,7 +66,7 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card text-center bg-dark border-success shadow-lg py-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3 payment-card">
         <img src="/assets/bitcoin_logo.png" alt="Bitcoin" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
         <p class="fw-bold text-success">$3500 / Trans</p>
         <p class="fw-bold text-success">1.5% TARIFA</p>
@@ -69,7 +74,7 @@
     </div>
 
     <div class="col-md-3">
-      <div class="card text-center bg-dark border-success shadow-lg py-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3 payment-card">
         <img src="/assets/tether_logo.png" alt="Tether" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
         <p class="fw-bold text-success">$3500 / Trans</p>
         <p class="fw-bold text-success">2% TARIFA</p>
@@ -79,6 +84,7 @@
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer class="bg-dark text-light py-4 mt-5">
   <div class="container">
     <div class="row">
