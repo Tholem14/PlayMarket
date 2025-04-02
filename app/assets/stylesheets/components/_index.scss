@@ -3,3 +3,24 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+
+#cart {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 190px;
+  height: 80px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#details{
+  background-color: #3e4176;
+}
+
+.modal-content{
+  background-color: #d9dae4;
+
+}

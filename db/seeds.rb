@@ -3,7 +3,8 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 # Example:
-#
+require 'open-uri'
+require 'json'
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
@@ -16,3 +17,25 @@
 # Product.create!(user: User.last, name:"AK", price: 123)
 # Cart.create!(user: User.first)
 # LineItem.create!(cart: Cart.first, product: Product.first)
+# Product.destroy_all
+user = User.create!(
+  email: "jor@gmail.com",
+  password: "123456"
+)
+
+url = 'https://bymykel.github.io/CSGO-API/api/en/skins.json'
+html_doc = URI.open(url).read
+products = JSON.parse(html_doc)
+
+products.last(20).each do |product|
+  Product.create!(
+    name: product["name"],
+    description: product["description"],
+    category: product["category"]["name"],
+    picture: product["image"],
+    price: rand(5..500),
+    user: user
+  )
+end
+
+puts "Se crearon #{Product.count} productos exitosamente."
