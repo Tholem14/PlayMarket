@@ -2,29 +2,9 @@
       <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
       </svg> Add new product'.html_safe, new_product_path, class:'btn btn-success w-40 rounded-pill py-2 fs-5 mt-4' %>
 
-<div id='cart' class="container"  data-bs-toggle="modal" data-bs-target="#myModal">
-<button class="btn btn-success rounded-4 py-2"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i>(0)</button>
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-lg position-fixed top-0 end-0 h-100" style="width: 45vw; max-width: 500px;">
-    <div class="modal-content">
+<div id='cart' class="container"  data-bs-toggle="modal" data-bs-target="#cartModal">
+<button class="btn btn-success rounded-4 py-2"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i><strong class="fw-5">(<%=@cart.line_items.count%>)</strong></button>
 
-
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
 </div>
 
 <section id="shop" class="container mt-5 rounded-4">
@@ -34,3 +14,5 @@
 <%end%>
 </div>
 </section>
+
+<%= render 'products/modal_cart'%>

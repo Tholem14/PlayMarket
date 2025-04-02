@@ -3,15 +3,16 @@ class LineItemsController < ApplicationController
   before_action :set_line_item, only: [:update, :destroy]
 
   def create
+    @cart = current_user.cart
+
     product = Product.find(params[:product_id])
     @line_item = @cart.add_product(product)
-
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to cart_path(@cart), notice: 'Juego agregado al carrito.' }
+        format.html { redirect_to products_path, notice: 'Producto agregado al carrito.' }
         format.js
       else
-        format.html { redirect_to product, alert: 'No se pudo agregar al carrito.' }
+        format.html { redirect_to products_path, alert: 'No se pudo agregar al carrito.' }
       end
     end
   end
