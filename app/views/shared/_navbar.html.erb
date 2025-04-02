@@ -7,7 +7,7 @@
 
       <div class="d-flex ms-auto gap-4">
       <%= link_to "Home", root_path, class: "nav-link text-white hover-effect" %>
-      <%= link_to "About", "#", class: "nav-link text-white hover-effect" %>
+      <%= link_to "About", "#aboutModal", class: "nav-link text-white hover-effect", data: { bs_toggle: "modal", bs_target: "#aboutModal" } %>
       <%= link_to "Market", products_path, class: "nav-link text-white hover-effect" %>
       <%= link_to "Add Product",  new_product_path, class: "nav-link text-white me-5 hover-effect" %>
     </div>
