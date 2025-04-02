@@ -21,33 +21,10 @@
   <ul id="suggestions" class="list-group mt-2"></ul>
 </div>
 
-<!-- Nuevo Banner -->
-<div class="container my-4 text-center">
-  <div class="d-flex justify-content-center align-items-center bg-dark text-white py-4" style="border-radius: 10px;">
-    <div class="row w-100">
-      <div class="col-md-3 text-center">
-        <img src="/assets/star-icon.png" alt="Reseñas" class="img-fluid mb-2">
-        <p>19 576 RESEÑAS EXCELENTES</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="/assets/flame-icon.png" alt="Cuotas" class="img-fluid mb-2">
-        <p>COMISIONES DEL 2%</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="/assets/discount-icon.png" alt="Descuento" class="img-fluid mb-2">
-        <p>HASTA 50% DE DESCUENTO EN LOS PRECIOS DE STEAM</p>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="/assets/clients-icon.png" alt="Clientes" class="img-fluid mb-2">
-        <p>4.6M+ CLIENTES SATISFECHOS</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Productos Destacados -->
 <div class="container my-5">
-  <h2 class="text-center text-white mb-4">Productos Destacados</h2>
+  <h2 class="text-center mb-4 fw-bold text-success text-uppercase">OFERTAS DESTACADAS</h2>
   <div class="row">
     <% @products.each do |product| %>
       <%= render 'products/product_card', product: product %>
@@ -55,33 +32,92 @@
   </div>
 </div>
 
+<!-- Explorar más -->
+<div class="text-center my-4">
+  <%= link_to "Ver todos los productos", products_path, class: "btn btn-outline-success btn-lg" %>
+</div>
+
+
 
 <!-- Métodos de Pago -->
-<div class="container my-5 text-white bg-dark py-4">
-  <h2 class="text-center mb-4">Elige entre más de 40 métodos de pago seguros</h2>
-  <div class="row text-center">
-    <div class="col-md-3 payment-method">
-      <img src="/assets/visa_logo" alt="Visa" class="img-fluid mb-2 payment-logo">
-      <p>$500 / Trans</p>
-      <p>0.25% TARIFA + 0.35$</p>
+<div class="container my-5 text-white py-4">
+  <h2 class="text-center mb-4 fw-bold text-success">Elige entre más de 40 métodos de pago seguros</h2>
+  <div class="row justify-content-center">
+
+    <div class="col-md-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3">
+        <img src="/assets/visa_logo.png" alt="Visa" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
+        <p class="fw-bold text-success">$500 / Trans</p>
+        <p class="fw-bold text-success">0.25% TARIFA + 0.35$</p>
+      </div>
     </div>
-    <div class="col-md-3 payment-method">
-      <img src="/assets/paypal_logo" alt="Payoneer" class="img-fluid mb-2 payment-logo">
-      <p>$1000 / Trans</p>
-      <p>0% TARIFA</p>
+
+    <div class="col-md-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3">
+        <img src="/assets/paypal_logo.png" alt="PayPal" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
+        <p class="fw-bold text-success">$1000 / Trans</p>
+        <p class="fw-bold text-success">0% TARIFA</p>
+      </div>
     </div>
-    <div class="col-md-3 payment-method">
-      <img src="/assets/bitcoin_logo" alt="Bitcoin" class="img-fluid mb-2 payment-logo">
-      <p>$3500 / Trans</p>
-      <p>1.5% TARIFA</p>
+
+    <div class="col-md-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3">
+        <img src="/assets/bitcoin_logo.png" alt="Bitcoin" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
+        <p class="fw-bold text-success">$3500 / Trans</p>
+        <p class="fw-bold text-success">1.5% TARIFA</p>
+      </div>
     </div>
-    <div class="col-md-3 payment-method">
-      <img src="/assets/tether_logo" alt="Tether" class="img-fluid mb-2 payment-logo">
-      <p>$3500 / Trans</p>
-      <p>2% TARIFA</p>
+
+    <div class="col-md-3">
+      <div class="card text-center bg-dark border-success shadow-lg py-3">
+        <img src="/assets/tether_logo.png" alt="Tether" class="img-fluid mx-auto mb-2 payment-logo" style="width: 80px;">
+        <p class="fw-bold text-success">$3500 / Trans</p>
+        <p class="fw-bold text-success">2% TARIFA</p>
+      </div>
     </div>
+
   </div>
 </div>
+
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center text-md-start">
+        <h5 class="fw-bold text-success">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="/about" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="/market" class="text-light text-decoration-none">Market</a></li>
+          <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5 class="fw-bold text-success">Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-facebook fa-2x"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-instagram fa-2x"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-success"><i class="fab fa-discord fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <h1 class="fw-bold text-success">PlayMarket</h1>
+        <p class="fs-4 text-success">You want it, you own it.</p>
+      </div>
+    </div>
+    <div class="mt-3 text-center">
+      <p class="small mb-0">&copy; <%= Time.now.year %> PlayMarket. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 
 <style>
   .payment-logo {
@@ -94,11 +130,6 @@
     height: 60px; /* Ajuste específico para PayPal */
   }
 </style>
-
-<!-- Explorar más -->
-<div class="text-center my-4">
-  <%= link_to "Ver todos los productos", products_path, class: "btn btn-outline-primary btn-lg" %>
-</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
