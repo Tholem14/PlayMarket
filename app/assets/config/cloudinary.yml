@@ -1,0 +1,9 @@
+development:
+  cloud_name: "dvpkudizj"
+  api_key: "927149934461934"
+  api_secret: "rZbAfJ6kIPkCzIfBJYE5xiP0-pc"
+
+production:
+  cloud_name: "dvpkudizj"
+  api_key: "927149934461934"
+  api_secret: "rZbAfJ6kIPkCzIfBJYE5xiP0-pc"
