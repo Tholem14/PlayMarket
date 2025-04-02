@@ -13,7 +13,13 @@
               <h3 class="text-success">$<%= product.price %></h3>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-success btn-block bottom-0 start-0 w-100 rounded-4 py- mt-3"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i>Add to cart</button>
+       <%= button_to line_items_path,
+  params: { product_id: product.id },
+  remote: true,
+  method: :post,
+  class: "btn btn-success btn-block rounded-4 py-3 mt-3" do %>
+    <i class="fa-solid fa-cart-plus fa-xl" style="color: rgb(0, 0, 0);"></i> Add to cart
+<% end %>
       </div>
     </div>
   </div>
