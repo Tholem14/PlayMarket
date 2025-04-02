@@ -8,11 +8,6 @@ class LineItem < ApplicationRecord
 
   def total_price
     product.price * quantity
-  end
-
-  after_create :decrement_product_stock
-  def decrement_product_stock
-    product.decrement!(:stock, quantity)
-  end
+  end;
 
 end

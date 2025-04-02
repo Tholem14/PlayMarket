@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @cart = current_user.cart
   end
 
   def new
@@ -16,10 +17,6 @@ class ProductsController < ApplicationController
     else
       render "new", status: :unprocessable_entity
     end
-  end
-
-  def add_line_item
-    @product = LineItem.new
   end
 
 private
