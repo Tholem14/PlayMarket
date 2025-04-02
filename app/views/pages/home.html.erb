@@ -4,7 +4,7 @@
 <div class="hero bg-dark text-white text-center py-5" style="background-image: url('/assets/counter_strike.jpg'); background-size: cover; background-position: right;">
   <div class="container">
     <h1 class="display-4">Compra y vende skins de Counter Strike</h1>
-    <%= link_to "Explorar Marketplace", products_path, class: "btn btn-primary btn-lg" %>
+    <%= link_to "Explorar Marketplace", products_path, class: "btn btn-success btn-lg" %>
   </div>
 </div>
 
@@ -14,7 +14,7 @@
     <%= form_with url: products_path, method: :get, local: true, class: "w-100" do |form| %>
       <div class="input-group">
         <%= form.text_field :query, placeholder: "Buscar skins o cuentas...", class: "form-control", id: "search-bar" %>
-        <%= form.submit "Buscar", class: "btn btn-secondary" %>
+        <%= form.submit "Buscar", class: "btn btn-success" %>
       </div>
     <% end %>
   </div>
@@ -47,22 +47,10 @@
 
 <!-- Productos Destacados -->
 <div class="container my-5">
-  <h2 class="text-center mb-4">Productos Destacados</h2>
+  <h2 class="text-center text-white mb-4">Productos Destacados</h2>
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <%= link_to product_path(product), class: "text-decoration-none text-dark" do %>
-            <!-- Espacio para la imagen del producto -->
-            <div class="card-img-top bg-light" style="height: 200px;"></div>
-            <div class="card-body text-center">
-              <h5 class="card-title"><%= product.name %></h5>
-              <p class="card-text"><%= number_to_currency(product.price, unit: "$") %></p>
-              <p class="text-danger" id="countdown-<%= product.id %>">00:00:00</p>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render 'products/product_card', product: product %>
     <% end %>
   </div>
 </div>
