@@ -18,6 +18,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def add_line_item
+    @product = LineItem.new
+  end
+
 private
 
   def product_params
