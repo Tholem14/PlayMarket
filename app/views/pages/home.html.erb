@@ -14,17 +14,7 @@
 </div>
 
 <!-- Barra de búsqueda -->
-<div class="container my-4">
-  <div class="input-group">
-    <%= form_with url: products_path, method: :get, local: true, class: "w-100" do |form| %>
-      <div class="input-group">
-        <%= form.text_field :query, placeholder: "Buscar skins o cuentas...", class: "form-control", id: "search-bar" %>
-        <%= form.submit "Buscar", class: "btn btn-success" %>
-      </div>
-    <% end %>
-  </div>
-  <ul id="suggestions" class="list-group mt-2"></ul>
-</div>
+<%= render "products/search_form" %>
 
 
 <!-- Productos Destacados -->
