@@ -1,0 +1,86 @@
+<div class="container shadow rounded-4 d-grid my-5 px-5 p-5 my-5 bg-dark text-white">
+   <h1><strong class="f2-5">Your Cart  <i class="fa-solid fa-cart-plus fa-md" style="color:rgb(238, 226, 226);"></i>(<%=@cart.line_items.sum(:quantity)%>)</strong></button></h1>
+  <div class="container-fluid mt-5 px-5 p-4 bg-light text-black shadow border-success rounded-top-4">
+   <div class="modal-body">
+        <% if @cart.line_items.any? %>
+          <ul class="list-group">
+            <% @cart.line_items.each do |line_item| %>
+              <li class="list-group-item rounded-4">
+                <img src="<%=line_item.product.picture%>" class="img-fluid rounded me-5" alt="<%=line_item.product.name%>" style="width: 130px; height: 130px;">
+                <strong class="fw-5 fs-5"><%= line_item.product.name %> - <%= number_to_currency(line_item.product.price) %> (x<%= line_item.quantity %>)</strong>
+                <%= button_to 'Remove', line_item_path(line_item), method: :delete, class: 'btn btn-danger btn-sm float-end rounded-3' %>
+              </li>
+            <% end %>
+          </ul>
+          <hr>
+          <div class="container d-flex justify-content-between">
+          <strong ><p class="text-end fw-3 fs-3">Total: <%= number_to_currency(@cart.total_price) %></p></strong>
+          </div>
+        <% else %>
+          <p>Your cart is empty.</p>
+        <% end %>
+      </div>
+  </div>
+  <div class="fw-3 fs-3 btn btn-success btn-lg btn-block rounden-bottom-5 p-2"data-bs-toggle="modal" data-bs-target="#paymentModal">
+   <%=link_to 'Checkout', cart_path(@cart) %>
+   </div>
+</div>
+
+
+
+
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-4">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Pago con Tarjeta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="card mx-auto mb-3 p-3" style="max-width: 350px; border-radius: 12px; background: linear-gradient(45deg, #283048, #859398); color: white;">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div class="chip bg-light rounded" style="width: 40px; height: 30px;"></div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="width: 50px;">
+                        </div>
+                        <h5 class="mt-3">**** **** **** 1234</h5>
+                        <div class="d-flex justify-content-between">
+                            <small>Card Holder</small>
+                            <small>Exp: 12/25</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form>
+                    <div class="mb-3">
+                        <label for="card-number" class="form-label">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="card-number" placeholder="•••• •••• •••• ••••">
+                    </div>
+                    <div class="mb-3">
+                        <label for="card-holder" class="form-label">Titular de la Tarjeta</label>
+                        <input type="text" class="form-control" id="card-holder" placeholder="Nombre en la tarjeta">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="card-expiry" class="form-label">Fecha de Expiración</label>
+                            <input type="text" class="form-control" id="card-expiry" placeholder="MM/AA">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="card-ccv" class="form-label">CCV</label>
+                            <input type="text" class="form-control" id="card-ccv" placeholder="•••">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mt-4" style="border-radius: 0 0 12px 12px;">Pagar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

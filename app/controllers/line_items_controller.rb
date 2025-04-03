@@ -28,7 +28,7 @@ class LineItemsController < ApplicationController
   def destroy
     @cart = @line_item.cart
     @line_item.destroy
-    redirect_to cart_path(@cart), notice: 'Juego eliminado del carrito.'
+    redirect_to line_item_path(@line_item), notice: 'Juego eliminado del carrito.'
   end
 
   private
