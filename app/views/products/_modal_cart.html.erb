@@ -1,23 +1,25 @@
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+         <h5 class="modal-title" id="cartModalLabel"><strong  class="ms-4 mt-3 fw-3 fs-3">Your Cart</strong></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <% if @cart.line_items.any? %>
           <ul class="list-group">
             <% @cart.line_items.each do |line_item| %>
-              <li class="list-group-item">
-                <%= line_item.product.name %> - <%= number_to_currency(line_item.product.price) %> (x<%= line_item.quantity %>)
-                <%= button_to 'Remove', line_item_path(line_item), method: :delete, class: 'btn btn-danger btn-sm float-end' %>
+              <li class="list-group-item rounded-4">
+                <img src="<%=line_item.product.picture%>" class="img-fluid rounded me-5" alt="<%=line_item.product.name%>" style="width: 110px; height: 110px;">
+                <strong class="fw-5 fs-5"><%= line_item.product.name %> - <%= number_to_currency(line_item.product.price) %> (x<%= line_item.quantity %>)</strong>
+                <%= button_to 'Remove', line_item_path(line_item), method: :delete, class: 'btn btn-danger btn-sm float-end rounded-3' %>
               </li>
             <% end %>
           </ul>
           <hr>
-          <p>Total: <%= number_to_currency(@cart.total_price) %> </p>
-
+          <div class="container d-flex justify-content-between">
+          <strong class="fw-5 fs-5"><p>Total: <%= number_to_currency(@cart.total_price) %></p></strong> <%=link_to 'Checkout', cart_path(@cart), class:"btn btn-success btn-lg p-2 rounded-3"%>
+          </div>
         <% else %>
           <p>Your cart is empty.</p>
         <% end %>

@@ -2,7 +2,7 @@ class CartsController < ApplicationController
   before_action :set_cart
 
   def show
-
+    @cart = current_user.cart
   end
 
 
@@ -11,6 +11,13 @@ class CartsController < ApplicationController
     session[:cart_id] = nil
     redirect_to products_path, notice: "Se vacio el carrito."
   end
+
+  def destroy_item
+    @cart = @line_item.cart
+    @line_item.destroy
+    redirect_to cart_path(@cart), notice: 'Juego eliminado del carrito.'
+  end
+
   private
 
   def set_cart
