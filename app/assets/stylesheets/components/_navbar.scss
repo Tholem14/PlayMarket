@@ -1,6 +1,9 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 80px; /* Ajusta la altura de la navbar */
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,12 +11,57 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 100px;
+  height: 100%; /* Que ocupe el 100% de la navbar */
+  max-height: 130px; /* Ajusta a tu gusto */
+  width: auto;  /* Mantiene la proporción */
+  object-fit: contain;
+  position: relative;
+  z-index: 10; /* Esto lo traerá al frente */
 }
 
+/* Efecto hover */
 .hover-effect:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #1edd88;
   border-radius: 5px;
   padding: 5px 10px;
   transition: all 0.3s;
+}
+
+#aboutModal .modal-dialog {
+  max-width: 1000px; // Puedes ajustarlo a 650px, 700px, etc.
+}
+
+#aboutModal .modal-content {
+  background-color: #1e1e1e; // Fondo oscuro
+  color: #ffffff;            // Texto claro
+  border-radius: 8px;
+  min-height: 500px;   // Ajusta a la altura deseada
+  padding: 20px;
+}
+
+#aboutModal .modal-header {
+  background-color: #1edd88;
+}
+
+#aboutModal .modal-title {
+color:#1e1e1e;
+}
+
+#aboutModal .modal-header,
+#aboutModal .modal-body,
+#aboutModal .modal-footer {
+  color: #ffffff;
+}
+
+#aboutModal .btn-close {
+  filter: invert(1); // Cambia la "x" de cerrar a blanca
+}
+
+#aboutModal .btn-secondary {
+  background-color: #1edd88; /* verde */
+  border: none;
+}
+
+#aboutModal .btn-secondary:hover {
+  background-color: #218838; /* verde más oscuro al pasar el mouse */
 }
