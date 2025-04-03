@@ -3,7 +3,11 @@
         <button id='details' class="btn btn-success text-white position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#productModal-<%= product.id %>">
             View Details
           </button>
-        <img src="<%=product.picture%>" class="card-img-top rounded-top" class="card-img-top" alt="<%=product.name%>">
+        <% if product.photo.attached? %>
+  <%= image_tag url_for(list.photo), class: "card-img-top rounded-top", alt: product.name %>
+<% else %>
+  <img src="<%= product.picture %>" class="card-img-top rounded-top" alt="<%= product.name %>">
+<% end %>
         <div class="card-body text-center flex-grow-1">
          <div class="mb-4">
           <h5 class="card-title text-white"  ><%=product.name%></h5>
