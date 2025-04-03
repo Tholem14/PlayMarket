@@ -3,7 +3,7 @@
       </svg> Add new product'.html_safe, new_product_path, class:'btn btn-success w-40 rounded-pill py-2 fs-5 mt-4' %>
 
 <div id='cart' class="container"  data-bs-toggle="modal" data-bs-target="#cartModal">
-<button class="btn btn-success rounded-4 py-2"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i><strong class="fw-5">(<%=@cart.line_items.count%>)</strong></button>
+<button class="btn btn-success rounded-4 py-2"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i><strong class="fw-5">(<%=@cart.line_items.sum(:quantity)%>)</strong></button>
 
 </div>
 
