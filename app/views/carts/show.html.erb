@@ -1,0 +1,3 @@
+<% if @cart.line_items.any? %>
+  <%= button_to "Finalizar Compra", orders_path, method: :post, class: "btn btn-primary" %>
+<% end %>

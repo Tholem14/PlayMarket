@@ -10,4 +10,8 @@ class LineItem < ApplicationRecord
     product.price * quantity
   end;
 
+  def enough_stock?
+    product.stock >= quantity
+  end
+
 end
