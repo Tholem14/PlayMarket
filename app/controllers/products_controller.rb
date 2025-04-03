@@ -3,6 +3,13 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     @cart = current_user.cart
+    if params[:query].present?
+      @products = @products.where("name ILIKE ?", "%#{params[:query]}%")
+    end
+    if params[:query].present?
+      @products = @products.where("name ILIKE ?", "%#{params[:query]}%")
+    end
+    @products = Product.search(params[:query], params[:category])
   end
 
   def new
