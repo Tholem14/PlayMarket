@@ -4,7 +4,7 @@
             View Details
           </button>
         <% if product.photo.attached? %>
-  <%= image_tag url_for(list.photo), class: "card-img-top rounded-top", alt: product.name %>
+  <%= image_tag url_for(product.photo), class: "card-img-top rounded-top", alt: product.name %>
 <% else %>
   <img src="<%= product.picture %>" class="card-img-top rounded-top" alt="<%= product.name %>">
 <% end %>
