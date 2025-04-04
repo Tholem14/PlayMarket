@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :line_items, only: [:create, :update, :destroy]
 
   resources :products
-  resources :orders, only: [:create, :show]
-
+  resources :orders, only: [:create, :show, :update]
+  resources :carts, only: [:show, :destroy]
   resources :transactions, only: [:index, :show]
 end
