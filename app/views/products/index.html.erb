@@ -7,12 +7,13 @@
 
 </div>
 
+<%= render "products/search_form" %>
+
 <section id="shop" class="container mt-5 rounded-4">
-   <div class="row">
+   <div class="row" >
 <% @products.each do |product|%>
   <%= render 'products/product_card', product: product %>
 <%end%>
 </div>
 </section>
-
 <%= render 'products/modal_cart'%>
