@@ -1,19 +1,26 @@
-<%= link_to '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-      </svg> Add new product'.html_safe, new_product_path, class:'btn btn-success w-40 rounded-pill py-2 fs-5 mt-4' %>
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mt-4 mb-2">
+  <%= link_to '<svg xmlns="#" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+      </svg> Add new product'.html_safe,
+    new_product_path,
+    class: 'btn btn-success rounded-pill py-2 px-4 fs-6 d-inline-flex align-items-center gap-2' %>
 
-<div id='cart' class="container"  data-bs-toggle="modal" data-bs-target="#cartModal">
-<button class="btn btn-success mt-5 rounded-4 py-3 px-4"><i class="fa-solid fa-cart-plus fa-xl" style="color:rgb(0, 0, 0);"></i><strong class="fw-5">(<%=@cart.line_items.sum(:quantity)%>)</strong></button>
-
+  <div id='cart' data-bs-toggle="modal" data-bs-target="#cartModal">
+    <button class="btn btn-success rounded-4 py-2 px-4 d-inline-flex align-items-center gap-2">
+      <i class="fa-solid fa-cart-plus fa-lg" style="color:rgb(0, 0, 0);"></i>
+      <strong>(<%= @cart.line_items.sum(:quantity) %>)</strong>
+    </button>
+  </div>
 </div>
 
 <%= render "products/search_form" %>
 
 <section id="shop" class="container mt-5 rounded-4">
-   <div class="row" >
-<% @products.each do |product|%>
-  <%= render 'products/product_card', product: product %>
-<%end%>
-</div>
+  <div class="row">
+    <% @products.each do |product| %>
+      <%= render 'products/product_card', product: product %>
+    <% end %>
+  </div>
 </section>
-<%= render 'products/modal_cart'%>
+
+<%= render 'products/modal_cart' %>
