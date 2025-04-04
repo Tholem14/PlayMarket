@@ -1,0 +1,15 @@
+<h1>Historial de Compras</h1>
+
+<% if @transactions.any? %>
+  <table class="table">
+    <% @transactions.each do |tx| %>
+      <tr>
+        <td><%= tx.order.id %></td>
+        <td><%= number_to_currency(tx.amount) %></td>
+        <td><%= tx.status %></td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>No hay transacciones registradas.</p>
+<% end %>
