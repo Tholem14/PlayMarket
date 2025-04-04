@@ -1,0 +1,35 @@
+<div class="container shadow rounded-4 d-grid my-5 px-5 p-5 my-5 bg-dark text-white">
+  <h1><strong class="f2-5">Pago con Tarjeta</strong></h1>
+  <div class="container-fluid mt-5 px-5 p-4 bg-light text-black shadow border-success rounded-top-4">
+    <div class="modal-body">
+      <div id="cardPaymentBrick_container"></div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-between">
+    <%= link_to 'Cancelar', cart_path(@cart), class: "btn btn-danger rounded-4 py-3 mt-3" %>
+    <div class="btn btn-outline-secondary btn-lg p-3 w-30" style="border-radius: 10px;" data-bs-toggle="modal" data-bs-target="#successModal">
+  <%= link_to 'Pagar', '#', class: "text-decoration-none text-white" %>
+</div>
+
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">¡Gracias por tu compra!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+
+        <div class="mb-4">
+          <i class="fas fa-check-circle" style="font-size: 50px; color: #28a745;"></i>
+        </div>
+        <p class="fs-4">Tu pago está siendo procesado. ¡Gracias por comprar con nosotros!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="location.reload();">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -6,8 +6,6 @@ class Order < ApplicationRecord
   validates :total, presence: true
   validates :status, inclusion: { in: %w[pending completed cancelled] }
 
-  order = Order.new(total: 99.99, user: User.first, status: 'completed') # Añade status
-  order.save!
 
 private
   def update_stock_and_log_transaction

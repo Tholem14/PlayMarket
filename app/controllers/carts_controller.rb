@@ -1,3 +1,5 @@
+  require 'mercadopago'
+
 class CartsController < ApplicationController
   before_action :set_cart
 
@@ -5,6 +7,9 @@ class CartsController < ApplicationController
     @cart = current_user.cart
   end
 
+  def payment
+    @cart = current_user.cart
+  end
 
   def destroy
     @cart.destroy

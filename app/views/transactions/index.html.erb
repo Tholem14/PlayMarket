@@ -1,15 +1,48 @@
-<h1>Historial de Compras</h1>
+<div class="container shadow rounded-4 d-grid my-5 px-5 p-5 bg-dark text-white">
+  <h1 class="text-center mb-4"><strong class="fs-2">Historial de Compras <i class="fa-solid fa-receipt fa-sm ms-2 text-white"></i></strong></h1>
 
-<% if @transactions.any? %>
-  <table class="table">
-    <% @transactions.each do |tx| %>
-      <tr>
-        <td><%= tx.order.id %></td>
-        <td><%= number_to_currency(tx.amount) %></td>
-        <td><%= tx.status %></td>
-      </tr>
-    <% end %>
-  </table>
-<% else %>
-  <p>No hay transacciones registradas.</p>
-<% end %>
+  <div class="container-fluid mt-4 px-4 py-4 bg-light text-black shadow border-success rounded-4">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered align-middle">
+        <thead class="table-dark text-center">
+          <tr>
+            <th>ID de Orden</th>
+            <th>Monto</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <td>1001</td>
+            <td><%= number_to_currency(59.99) %></td>
+            <td><span class="badge bg-success rounded-pill px-3 py-2">Aprobado</span></td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td><%= number_to_currency(149.00) %></td>
+            <td><span class="badge bg-danger rounded-pill px-3 py-2">Rechazado</span></td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td><%= number_to_currency(20.50) %></td>
+            <td><span class="badge bg-success rounded-pill px-3 py-2">Aprobado</span></td>
+          </tr>
+          <tr>
+            <td>1004</td>
+            <td><%= number_to_currency(89.90) %></td>
+            <td><span class="badge bg-warning text-dark rounded-pill px-3 py-2">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>1005</td>
+            <td><%= number_to_currency(12.00) %></td>
+            <td><span class="badge bg-success rounded-pill px-3 py-2">Aprobado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="text-end mt-4">
+    <%= link_to 'Volver a inicio', root_path, class: 'btn btn-outline-light btn-lg rounded-3' %>
+  </div>
+</div>
