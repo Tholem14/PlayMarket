@@ -14,6 +14,11 @@ Rails.application.routes.draw do
 
   resources :products
   resources :orders, only: [:create, :show, :update]
-  resources :carts, only: [:show, :destroy]
+  resources :carts, only: [:show, :destroy] do
+  member do
+    get :payment
+  end
+end
   resources :transactions, only: [:index, :show]
+ post 'carts/:cart_id/process_payment', to: 'carts#process_payment', as: 'process_payment'
 end
