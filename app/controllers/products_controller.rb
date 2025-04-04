@@ -26,9 +26,29 @@ class ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    @product = Product.find(params[:id])
+
+    if @product.line_items.exists?
+      redirect_to products_path, alert: "You cannot delete this product because it is in use."
+    else
+
+    if @product.user_id == current_user.id
+      @product.destroy
+
+      respond_to do |format|
+        format.turbo_stream
+        format.html { redirect_to products_path, notice: "Producto eliminado correctamente." }
+      end
+    else
+      redirect_to products_path, alert: "No tienes permiso para eliminar este producto."
+    end
+    end
+  end
+
 private
 
   def product_params
-    params.require(:product).permit(:name, :description, :category, :price, :picture, :status)
+    params.require(:product).permit(:name, :description, :category, :price, :picture, :status, :photo)
   end
 end

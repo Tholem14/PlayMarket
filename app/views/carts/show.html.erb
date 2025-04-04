@@ -7,7 +7,7 @@
             <% @cart.line_items.each do |line_item| %>
               <li class="list-group-item rounded-4">
                 <% if line_item.product.photo.attached? %>
-                <%= image_tag url_for(line_item.product.photo), class: "card-img-top rounded-top", alt: product.name %>
+                <%= image_tag url_for(line_item.product.photo), class: "card-img-top rounded-top", style:"width: 130px; height: 130px;", alt: line_item.product.name %>
                   <% else %>
                 <img src="<%=line_item.product.picture%>" class="img-fluid rounded me-5" alt="<%=line_item.product.name%>" style="width: 130px; height: 130px;">
                 <% end %>
@@ -25,7 +25,7 @@
         <% end %>
       </div>
   </div>
-  <div class=" fw-3 fs-3 btn btn-success btn-lg btn-block rounden-bottom-5 p-2"data-bs-toggle="modal" data-bs-target="#paymentModal">
+  <div class=" fw-3 fs-3 btn btn-success btn-lg btn-block rounded-bottom-4 p-2"data-bs-toggle="modal" data-bs-target="#paymentModal">
    <%=link_to 'Checkout', cart_path(@cart), class:"text-decoration-none text-white" %>
    </div>
 </div>

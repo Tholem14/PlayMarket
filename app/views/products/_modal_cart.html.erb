@@ -11,7 +11,7 @@
             <% @cart.line_items.each do |line_item| %>
               <li class="list-group-item rounded-4">
                 <% if line_item.product.photo.attached? %>
-                <%= image_tag url_for(line_item.product.photo), class: "card-img-top rounded-top", alt: product.name %>
+                <%= image_tag url_for(line_item.product.photo), class: "card-img-top rounded-top", style:"width: 110px; height: 110px;", alt: line_item.product.name %>
                   <% else %>
                     <img src="<%=line_item.product.picture%>" class="img-fluid rounded me-5" alt="<%=line_item.product.name%>" style="width: 110px; height: 110px;">
                     <% end %>
