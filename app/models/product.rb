@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   belongs_to :user
-  has_many :line_items
+  has_many :line_items, dependent: :restrict_with_exception
   has_one_attached :photo
 
   scope :filter_by_name, ->(query) { where("name ILIKE ?", "%#{query}%") if query.present? }
